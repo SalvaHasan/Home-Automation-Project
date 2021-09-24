@@ -104,7 +104,7 @@ const App = () => {
                 .then(response => response.text())
                 .then(result => console.log(result))
                 .catch(error => {
-                  console.log('error: ', error);
+                 // console.log('error: ', error);
                 });
             });
         });
@@ -133,7 +133,7 @@ const App = () => {
                 .then(response => response.text())
                 .then(result => console.log(result))
                 .catch(error => {
-                  console.log('error: ', error);
+                //  console.log('error: ', error);
                 });
             });
         });
@@ -166,7 +166,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+           // console.log(error)
           })
 
         decryptData(result[1])
@@ -177,7 +177,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+           // console.log(error)
           })
 
           decryptData(result[2])
@@ -188,7 +188,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+          //  console.log(error)
           })
 
           decryptData(result[3])
@@ -199,10 +199,12 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+           // console.log(error)
           })
       
-    }).catch(error => console.log('error: ', error));
+    }).catch(error => {
+     // console.log('error: ', error)
+    });
   
     fetch("Enter URL here", requestOptions)
       .then(response => response.json())
@@ -216,7 +218,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+           // console.log(error)
           })
 
         decryptData(result[1])
@@ -227,7 +229,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+           // console.log(error)
           })
 
           decryptData(result[2])
@@ -238,7 +240,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+          //  console.log(error)
           })
 
           decryptData(result[3])
@@ -249,10 +251,12 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+          //  console.log(error)
           })
       
-    }).catch(error => console.log('error: ', error));
+    }).catch(error => {
+      //console.log('error: ', error)
+    });
 
     fetch("Enter URL here", requestOptions)
       .then(response => response.json())
@@ -266,7 +270,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+           // console.log(error)
           })
 
         decryptData(result[1])
@@ -277,7 +281,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+            //console.log(error)
           })
 
           decryptData(result[2])
@@ -288,7 +292,7 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+           // console.log(error)
           })
 
           decryptData(result[3])
@@ -299,11 +303,13 @@ const App = () => {
             }
           })
           .catch(error => {
-            console.log(error)
+          //  console.log(error)
           })
       
-    }).catch(error => console.log('error: ', error));
-  console.log("Status Updated")
+    }).catch(error => {
+    //console.log('error: ', error)
+    });
+  //console.log("Status Updated")
   setLoader(false);
   }
 
